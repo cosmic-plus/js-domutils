@@ -7,7 +7,8 @@
  */
 const params = module.exports
 
-const hiddenKey = require("./misc").setHiddenProperty
+const misc = require("@cosmic-plus/jsutils/es5/misc")
+const hiddenKey = misc.setHiddenProperty
 
 if (location.search) {
   const vars = location.search.substr(1).split("&")

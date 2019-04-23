@@ -8,13 +8,12 @@
  */
 const dom = exports
 
+const env = require("@cosmic-plus/jsutils/es5/env")
+
 const html = require("./html")
 
 /// Prevent node failure when accidentaly loading this file.
-const env = require("./env")
 const document = env.window ? env.window.document : undefined
-if (env.isNode)
-  console.error("@cosmic-plus/jsutils/dom is a browser-only module")
 
 /**
  * Add to dom all **element** child having an `id=` attribute.

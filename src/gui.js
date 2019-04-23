@@ -14,8 +14,9 @@
  * Escape: \%example | \%{example}
  */
 
+const Projectable = require("@cosmic-plus/jsutils/es5/projectable")
+
 const html = require("./html")
-const Projectable = require("./projectable")
 
 /**
  * Class

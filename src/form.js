@@ -2,9 +2,10 @@
 /**
  * The Form class ease the creation of html forms.
  */
-const env = require("./env")
+const env = require("@cosmic-plus/jsutils/es5/env")
+const misc = require("@cosmic-plus/jsutils/es5/misc")
+
 const html = require("./html")
-const helpers = require("./misc")
 
 module.exports = class Form {
   constructor (element) {
@@ -63,7 +64,7 @@ module.exports = class Form {
     this.infoNode.textContent = info
     this.infoNode.className = "info"
     html.append(this.infoNode, html.create("span", ".cosmiclib_loader"))
-    await helpers.timeout(30)
+    await misc.timeout(30)
     return this
   }
   setError (error) {
@@ -161,7 +162,7 @@ module.exports = class Form {
     const element = this.firstInput
     if (element) element.focus()
     if (element.name === "password") {
-      helpers.timeout(30).then(() => {
+      misc.timeout(30).then(() => {
         if (element.value !== "") element.nextSibling.focus()
       })
     }

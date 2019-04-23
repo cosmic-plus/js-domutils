@@ -3,8 +3,9 @@
  * Generic tabbed browsing Gui.
  */
 
+const Mirrorable = require("@cosmic-plus/jsutils/es5/mirrorable")
+
 const html = require("./html")
-const Mirrorable = require("./mirrorable")
 const Gui = require("./gui")
 
 const Tabs = module.exports = class Tabs extends Mirrorable {

@@ -1,9 +1,9 @@
 {
-  "name": "@cosmic-plus/jsutils",
+  "name": "@cosmic-plus/domutils",
   "version": "1.15.0",
-  "description": "Generic JavaScript utilities that are not related to Stellar",
+  "description": "Generic browser utilities that are not related to Stellar",
   "author": "MisterTicot",
-  "repository": "github:cosmic-plus/node-jsutils",
+  "repository": "github:cosmic-plus/node-domutils",
   "license": "MIT",
   "main": "src/index.js",
   "module": "es5/index.mjs",
@@ -27,6 +27,7 @@
     "prettier": "^1.16.4"
   },
   "dependencies": {
-    "@babel/runtime": "^7.4.3"
+    "@babel/runtime": "^7.4.3",
+    "@cosmic-plus/jsutils": "^2.0.0"
   }
 }

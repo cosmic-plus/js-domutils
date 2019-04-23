@@ -10,13 +10,14 @@
  */
 const html = exports
 
-const { deprecated } = require("./misc.js")
+const env = require("@cosmic-plus/jsutils/es5/env")
+const misc = require("@cosmic-plus/jsutils/es5/misc")
 
 /// Prevent node failure when accidentaly loading this file.
-const env = require("./env")
 const document = env.window ? env.window.document : undefined
-if (env.isNode)
-  console.error("@cosmic-plus/jsutils/html is a browser-only module")
+if (env.isNode) {
+  console.error("@cosmic-plus/domutils is a browser-only module")
+}
 
 /**
  * Add `string` as additional CSS definitions for the current document.
@@ -51,7 +52,7 @@ html.addClass = function (element, className) {
 
 // Deprecated since 2019-01-16
 html.appendClass = function (element, className) {
-  deprecated("2019-07-16", "html.appendClass()", "html.addClass()")
+  misc.deprecated("2019-07-16", "html.appendClass()", "html.addClass()")
   return html.addClass(element, className)
 }
 
