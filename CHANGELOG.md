@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## Unreleased
+## 2.0.0 - 2019-04-26
 
 ### Breaking
 
@@ -12,7 +12,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 - Bundle transpiled ES5 code within the package.
-- Enable tree shaking for Webpack & Parcel (Rollup needs some additional work).
+- Partly enable tree shaking.
 
 ## 1.15.0 - 2019-04-12
 
@@ -135,4 +135,4 @@ All notable changes to this project will be documented in this file.
 ## Older Releases
 
 There is no changelog for older releases. Please take a look at [commit
-history](https://github.com/cosmic-plus/node-ledger-wallet/commits/master).
+history](https://github.com/cosmic-plus/node-domutils/commits/master).
