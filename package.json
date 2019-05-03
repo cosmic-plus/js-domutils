@@ -1,6 +1,6 @@
 {
   "name": "@cosmic-plus/domutils",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Generic browser utilities that are not related to Stellar",
   "author": "MisterTicot",
   "repository": "github:cosmic-plus/node-domutils",
