@@ -167,7 +167,7 @@ function linkAttribute (obj, src, el, dest, func) {
   }
 
   const transformer = func ? func.bind(obj) : functionBinder.bind(obj)
-  obj.link(src, el, dest, transformer, null, true)
+  obj.link(src, el, dest, transformer)
 
   // Two-ways binding.
   if (

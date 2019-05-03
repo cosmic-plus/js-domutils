@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2.0.2 - 2019-05-03
+
+### Fixed
+
+- gui.js: Remove obsolete arguments from a function call.
+
 ## 2.0.1 - 2019-05-03
 
 ### Changed
