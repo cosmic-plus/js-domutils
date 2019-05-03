@@ -181,7 +181,7 @@ function linkAttribute (obj, src, el, dest, func) {
     && (el.type !== "checkbox" && dest === "value"
       || el.type === "checkbox" && dest === "checked")
   ) {
-    el.addEventListener("change", () => obj[src] = el[dest])
+    el.addEventListener("input", () => obj[src] = el[dest])
   } else if (
     el.tagName === "INPUT"
     && el.type === "radio"

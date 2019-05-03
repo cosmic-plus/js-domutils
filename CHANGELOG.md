@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2.0.1 - 2019-05-03
+
+### Changed
+
+- gui.js: Two-way binding of inputs now updates models "oninput" rather than
+  "onchange".
+
 ## 2.0.0 - 2019-04-26
 
 ### Breaking
