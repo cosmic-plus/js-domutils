@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2.0.3 - 2019-06-29
+
+- service-worker.js: Properly handle URL with hashtags.
+
 ## 2.0.2 - 2019-05-03
 
 ### Fixed

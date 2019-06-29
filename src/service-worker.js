@@ -65,7 +65,7 @@ const ServiceWorker = module.exports = class ServiceWorker {
       if (!event.request.url.match(this.startByRoot)) return
 
       /// Strip out query string from request.
-      const request = new Request(event.request.url.replace(/\?.*$/, ""))
+      const request = new Request(event.request.url.replace(/(\?|#).*$/, ""))
       const filename = request.url.replace(this.startByRoot, "") || "index.html"
 
       const config = this.files[filename]
