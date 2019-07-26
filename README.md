@@ -1,5 +1,11 @@
 # @cosmic-plus/domutils
 
+![Licence](https://img.shields.io/github/license/cosmic-plus/js-domutils.svg)
+[![Dependencies](https://david-dm.org/cosmic-plus/js-domutils/status.svg)](https://david-dm.org/cosmic-plus/js-domutils)
+![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/npm/@cosmic-plus/domutils.svg)
+![Size](https://img.shields.io/bundlephobia/minzip/@cosmic-plus/domutils.svg)
+![Downloads](https://img.shields.io/npm/dt/@cosmic-plus/domutils.svg)
+
 Generic browser utilities that are not related to Stellar.
 
 _Note:_ This is an internal library and may be modified in
@@ -30,6 +36,6 @@ To pick a module: `const $module = require("@cosmic-plus/domutils/es5/$module")`
 
 ## Additional Resources
 
-- GitHub repository: https://github.com/cosmic-plus/node-domutils
+- GitHub repository: https://github.com/cosmic-plus/js-domutils
 - NPM package: https://npmjs.com/@cosmic-plus/domutils
 - Yarn package: https://yarn.pm/@cosmic-plus/domutils
