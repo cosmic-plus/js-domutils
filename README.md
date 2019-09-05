@@ -1,10 +1,10 @@
 # @cosmic-plus/domutils
 
 ![Licence](https://img.shields.io/github/license/cosmic-plus/js-domutils.svg)
-[![Dependencies](https://david-dm.org/cosmic-plus/js-domutils/status.svg)](https://david-dm.org/cosmic-plus/js-domutils)
-![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/npm/@cosmic-plus/domutils.svg)
-![Size](https://img.shields.io/bundlephobia/minzip/@cosmic-plus/domutils.svg)
-![Downloads](https://img.shields.io/npm/dt/@cosmic-plus/domutils.svg)
+[![Dependencies](https://badgen.net/david/dep/cosmic-plus/js-domutils)](https://david-dm.org/cosmic-plus/js-domutils)
+![Vulnerabilities](https://snyk.io/test/npm/@cosmic-plus/domutils/badge.svg)
+![Size](https://badgen.net/bundlephobia/minzip/@cosmic-plus/domutils)
+![Downloads](https://badgen.net/npm/dt/@cosmic-plus/domutils)
 
 Generic browser utilities that are not related to Stellar.
 
