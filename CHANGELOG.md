@@ -2,7 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+
+### Fixed
+
+- Logic: Service worker bypass browser cache. This is to make sure that the
+  latest files are downloaded on package upgrade.
+
 ## 2.0.3 - 2019-06-29
+
+### Fixed
 
 - service-worker.js: Properly handle URL with hashtags.
 
@@ -152,4 +161,4 @@ All notable changes to this project will be documented in this file.
 ## Older Releases
 
 There is no changelog for older releases. Please take a look at [commit
-history](https://github.com/cosmic-plus/node-domutils/commits/master).
+history](https://github.com/cosmic-plus/js-domutils/commits/master).

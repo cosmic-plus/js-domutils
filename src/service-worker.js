@@ -64,9 +64,19 @@ const ServiceWorker = module.exports = class ServiceWorker {
       if (!this.enabled || event.request.method !== "GET") return
       if (!event.request.url.match(this.startByRoot)) return
 
-      /// Strip out query string from request.
-      const request = new Request(event.request.url.replace(/(\?|#).*$/, ""))
-      const filename = request.url.replace(this.startByRoot, "") || "index.html"
+      // Replace query & hash.
+      let url = event.request.url.replace(/(\?|#).*$/, "")
+      let filename = url.replace(this.startByRoot, "")
+
+      // Cosmic.link fix - TODO: implement generic rewrite.
+      if (!filename) {
+        filename = "index.html"
+        url += "index.html"
+      }
+
+      // Tag URL to bypass browser cache.
+      const tag = `?version=${this.version}`
+      const request = new Request(`${url}${tag}`)
 
       const config = this.files[filename]
       if (config && strategy[config]) {
@@ -82,7 +92,9 @@ const ServiceWorker = module.exports = class ServiceWorker {
  * Cache **files** into `worker.cacheName`.
  */
 function precache (worker, files) {
-  return caches.open(worker.cacheName).then(cache => cache.addAll(files))
+  // Tag URL to bypass browser cache.
+  const urls = files.map(f => `${f}?version=${worker.version}`)
+  return caches.open(worker.cacheName).then(cache => cache.addAll(urls))
 }
 
 /**
