@@ -1,4 +1,4 @@
-"use_strict"
+"use strict"
 /**
  * The Form class ease the creation of html forms.
  */

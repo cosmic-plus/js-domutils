@@ -1,4 +1,4 @@
-"use_strict"
+"use strict"
 /**
  * Utilities to save/load files. Currently works only in browser environment.
  *

@@ -1,4 +1,4 @@
-"use_strict"
+"use strict"
 /**
  * Web application pages are embeded into URL hash.
  *

@@ -1,4 +1,4 @@
-"use_strict"
+"use strict"
 /**
  * A simple module that ease access to HTML DOM nodes. Any HTML element having
  * an `id` at loading time is registered at dom[id]. This is to avoid running

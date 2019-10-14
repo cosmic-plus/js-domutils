@@ -1,4 +1,4 @@
-"use_strict"
+"use strict"
 /**
  * Utilities to manipulate HTML element from javascript.
  *
