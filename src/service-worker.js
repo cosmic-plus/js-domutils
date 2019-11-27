@@ -27,6 +27,14 @@ const ServiceWorker = module.exports = class ServiceWorker {
   }
 
   /**
+   * Loads ServiceWorker in development environment.
+   */
+  development () {
+    this.enabled = true
+    return this
+  }
+
+  /**
    * Log **message** if ServiceWorker is verbose.
    */
   log (message) {
