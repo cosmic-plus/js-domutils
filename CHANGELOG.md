@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2.1.0 - 2019-11-30
+
+### Added
+
+- Logic: Add `.development()` switch to ServiceWorker.
+
 ## 2.0.4 - 2019-07-09
 
 ### Fixed
